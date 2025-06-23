@@ -1,1 +1,33 @@
+<!DOCUTYPE html>
+<html lang="ja">
+<head>
+    <meta charset = "UTF-8">
+    <title>Ya-G Official</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <h1>Ya-G Offocial</h1>
+    <h2>Songs</h2>
+        <p><a href="/Users/taiki03/VSC/Ya-G Blog/index_songs.html">オリジナル楽曲をまとめてあります</a></p>
+    <h2>Biography</h2>
+        <p><a href="/Users/taiki03/VSC/Ya-G Blog/index_biography.html">経歴をまとめてあります</a></p>
+    <h2>Link Tree</h2>
+        <p><a href="/Users/taiki03/VSC/Ya-G Blog/index_linktree.html">各SNSへのリンクをまとめてあります</a></p>
+    <h2>Address</h2>
+        <ul>
+            <li>名前：Ya-G（やじー）</li>
+            <li>連絡先：<span id="copyText">horumonshanyang@gmail.com</span></li>
+        </ul>
 
+    <script>
+        document.getElementById("copyText").addEventListener("click", function () {
+          const text = this.innerText;
+          navigator.clipboard.writeText(text).then(() => {
+            alert("コピーしました: " + text);
+          }).catch(err => {
+            alert("コピーに失敗しました");
+            console.error(err);
+          });
+        });
+    </script>
+</body>
