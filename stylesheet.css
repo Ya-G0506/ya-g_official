@@ -11,3 +11,8 @@ li{
 .biography{
     line-height: 200%;
 }
+
+body{
+    color: white;
+    background-color: black;
+}
