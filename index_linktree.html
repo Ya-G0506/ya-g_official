@@ -6,12 +6,33 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <h2>Link Tree</h2>
+    <nav>
+        <ul class="ul_navigationbar">
+            <li class="li_navigationbar"><a class="a_navigationbar" href="index.html">Home</a></li>
+            <li class="li_navigationbar"><a class="a_navigationbar" href="index_songs.html">Songs</a></li>
+            <li class="li_navigationbar"><a class="a_navigationbar" href="index_linktree.html">Link Tree</a></li>
+        </ul>    
+    </nav>
+    <h1>Link Tree</h1>
     <ul>
         <li><a href="http://www.youtube.com/@Ya-G">YouTube</a></li>
         <li><a href="https://www.nicovideo.jp/user/129129559">ニコニコ動画</a></li>
         <li><a href="https://piapro.jp/Horumon_goat">Piapro</a></li>
         <li><a href="https://x.com/HolidayEnd_less">X(旧Twitter)</a></li>
-        <li><a href="/Users/taiki03/VSC/Ya-G Blog/index.html">オフィシャルサイト</a></li>
+        <li><a href="index.html">オフィシャルサイト</a></li>
     </ul>
+    <h2>Address</h2>
+        <p>連絡先：<span id="copyText">horumonshanyang@gmail.com</span>(クリックでコピー可)</p>
+
+    <script>
+        document.getElementById("copyText").addEventListener("click", function () {
+          const text = this.innerText;
+          navigator.clipboard.writeText(text).then(() => {
+            alert("コピーしました: " + text);
+          }).catch(err => {
+            alert("コピーに失敗しました");
+            console.error(err);
+          });
+        });
+    </script>
 </body>

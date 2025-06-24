@@ -6,29 +6,30 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <h1>Ya-G Offocial</h1>
-    <h2>Songs</h2>
-        <p><a href="index_songs.html">オリジナル楽曲をまとめてあります</a></p>
-    <h2>Biography</h2>
-        <p><a href="index_biography.html">経歴をまとめてあります</a></p>
-    <h2>Link Tree</h2>
-        <p><a href="index_linktree.html">各SNSへのリンクをまとめてあります</a></p>
-    <h2>Address</h2>
-        <ul>
-            <li>名前：Ya-G（やじー）</li>
-            <li>連絡先：<span id="copyText">horumonshanyang@gmail.com</span></li>
-        </ul>
-
-    <script>
-        document.getElementById("copyText").addEventListener("click", function () {
-          const text = this.innerText;
-          navigator.clipboard.writeText(text).then(() => {
-            alert("コピーしました: " + text);
-          }).catch(err => {
-            alert("コピーに失敗しました");
-            console.error(err);
-          });
-        });
-    </script>
+    <nav>
+        <ul class="ul_navigationbar">
+            <li class="li_navigationbar"><a class="a_navigationbar" href="index.html">Home</a></li>
+            <li class="li_navigationbar"><a class="a_navigationbar" href="index_songs.html">Songs</a></li>
+            <li class="li_navigationbar"><a class="a_navigationbar" href="index_linktree.html">Link Tree</a></li>
+        </ul>    
+    </nav>
+    <h1>Ya-G Official</h1>
+    <h2>Profile</h2>
+    <p>
+        Ya-G(やじー)です。主に楽曲制作を行なっております。
+        <br>基本的には全部自分でやりたいので最近はMVからイラストまで自分で制作しています。
+    </p>
+    <h2>News</h2>
+    <ul>
+        <li class="biography">2025.07.01－Ya-Gオフィシャルサイト開設</li>
+        <li class="biography">2025.06.06－キラハピ2025参加曲：4thシングル「フラワーギフト」公開</li>
+        <li class="biography">2025.03.05－活動完全再開
+        <li class="biography">2024.05.19－受験勉強のため活動休止（2回目）</li>
+        <li class="biography">2024.05.19－3rdシングル「ヘッドショットを君に」公開</li>
+        <li class="biography">2024.03.24－活動一時再開</li>
+        <li class="biography">2023.08.19－受験勉強のため活動休止</li>
+        <li class="biography">2023.08.04－ボカコレ2023夏ルーキー参加曲：2ndシングル「アサシン」公開</li>
+        <li class="biography">2023.05.06－前身の「ホルモン山羊」から改名 & 1stシングル「私の恋はヘビー級」公開</li>
+    </ul>
 </body>
 </html>
