@@ -7,3 +7,7 @@ li{
     color: black;
     text-decoration: underline;
   }
+
+.biography{
+    line-height: 200%;
+}
